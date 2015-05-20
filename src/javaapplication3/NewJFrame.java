@@ -83,7 +83,8 @@ this.dispose();        // TODO add your handling code here:
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 //      JOptionPane.showMessageDialog(null,"diste click en el boton aceptar");
         
-        
+        int apellido;
+        int apodo;
         
         int vEdad2;
         
