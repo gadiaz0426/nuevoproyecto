@@ -21,8 +21,11 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         vNombre = new javax.swing.JTextField();
         vEdad = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         jButton1.setText("ACEPTAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -30,6 +33,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(40, 250, 79, 23);
 
         jButton2.setText("SALIR");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -37,56 +42,32 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton2);
+        jButton2.setBounds(150, 250, 61, 23);
 
         jLabel1.setText("NOMBRE");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(26, 11, 42, 14);
 
         jLabel2.setText("EDAD");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(30, 100, 27, 14);
 
         vNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 vNombreActionPerformed(evt);
             }
         });
+        getContentPane().add(vNombre);
+        vNombre.setBounds(113, 11, 58, 20);
+        getContentPane().add(vEdad);
+        vEdad.setBounds(113, 49, 58, 20);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(63, 63, 63)
-                        .addComponent(jButton1)
-                        .addGap(60, 60, 60)
-                        .addComponent(jButton2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2))
-                        .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(vEdad, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
-                            .addComponent(vNombre))))
-                .addContainerGap(137, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(vNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(vEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 185, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addGap(23, 23, 23))
-        );
+        jLabel3.setText("APELLIDO");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(30, 60, 48, 14);
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(113, 87, 58, 20);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -110,7 +91,9 @@ this.dispose();        // TODO add your handling code here:
         if(vEdad2>=18){
             JOptionPane.showMessageDialog(null,"mayor de edad");
         }
-       
+        else{
+            JOptionPane.showMessageDialog(null,"menor de edad");
+        }
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -154,6 +137,8 @@ this.dispose();        // TODO add your handling code here:
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField vEdad;
     private javax.swing.JTextField vNombre;
     // End of variables declaration//GEN-END:variables
