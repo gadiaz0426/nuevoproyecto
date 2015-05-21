@@ -16,6 +16,7 @@ int casa;
     }
     
     public void pintar(){
+        System.out.println("contar ");
         
     }
 }
